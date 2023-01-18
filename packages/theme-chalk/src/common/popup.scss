@@ -1,5 +1,4 @@
 @import "./var.scss";
-@import "../mixins/mixins";
 
 .v-modal-enter {
   animation: v-modal-in .2s ease;
@@ -25,7 +24,7 @@
   }
 }
 
-.v-modal {
+v-modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -33,10 +32,4 @@
   height: 100%;
   opacity: $--popup-modal-opacity;
   background: $--popup-modal-background-color;
-}
-
-@include b(popup-parent) {
-  @include m(hidden) {
-    overflow: hidden;
-  }
 }
